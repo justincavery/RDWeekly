@@ -1,0 +1,386 @@
+/*
+Theme Name:         Reverie
+Theme URI:          http://themefortress.com/reverie/
+Description:        Reverie is a versatile HTML5 responsive WordPress framework based on ZURB's Foundation.
+Version:            1.0.0
+Author:             Zhen Huang
+Author URI:         http://themefortress.com/
+
+License:            MIT License
+License URI:        http://www.opensource.org/licenses/mit-license.php
+*/
+
+/* -------------------------------------------------- 
+   Table of Contents
+-----------------------------------------------------
+:: Customized Adjustments of Foundation for WordPress
+:: Styling Basic WordPress Outputs
+:: Customize Foundation Style Pagination for WP-Pagenavi
+:: Your Customized Style
+*/
+
+/* ---------------------------------------------------
+   Customized Adjustments of Foundation for WordPress
+--------------------------------------------------- */
+	* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+	/* Auto Height for Images for Responsive Design */
+	img { height: auto; }
+	li { margin-bottom: 2%!important; }
+
+	/* ZURB Navi for Foundation */
+	dl.nav { display: block; width: auto; height: 27px; margin: 0 0 18px; }
+	dl.nav dt, dl.nav dd { float: left; display: inline; }
+	dl.nav dt { color: #999; font-weight: normal; }
+	dl.nav dd a { text-decoration: none; margin-left: 6px; padding: 5px 12px;
+	 -webkit-border-radius: 12px; -moz-border-radius: 12px; }
+	dl.nav dd a:hover { background: #eee; }
+	dl.nav dd.current-menu-item a,
+	dl.nav dd.current-post-ancestor a,
+	dl.nav dd.current-menu-parent a,
+	dl.nav dd.current-post-parent a
+	 { background: #2A85E8; color: #fff; }
+ 
+	/* Foundation-specific presentation CSS by ZURB */
+	body { padding-bottom: 60px; }
+	div.reverie-header { margin: 0 0 20px 0; padding: 16px 0 0 0; }
+	div.reverie-header h1 { margin-bottom: 0; padding: 0; }
+	div.reverie-header h1 a { color: #181818; }
+	div.reverie-header h1 a:hover { color: #181818; }
+	div.reverie-header .subheader { margin-bottom: 9px; }
+	div.highlight { margin-bottom: 12px; }
+	img.beta { position: absolute; top: 0px; right: 0px; }
+
+h1, h2, h3, h4, h5, h6 {
+color: #181818;
+}
+
+
+/* -----------------------------------------
+   Styling Basic WordPress Outputs
+----------------------------------------- */
+	
+	#content {padding:0 20px;}
+	
+	/* Resizing the Blog Post */
+.home input.input-text {
+	font-size: 1.6em;
+padding: 4px 3px 2px;
+background: white;
+line-height: 1em;
+}
+
+.home .large.button {
+	width: 100%;
+}
+	
+	/* Add Divider for Listed Posts */
+	.divider { /*background:url(images/divider.png) no-repeat center top;*/ height:36px; margin:20px 0 27px; }	
+	
+	/* Add Align Class for Images */
+	img.alignright { float: right; margin: 0 0 18px 18px; }
+	img.alignleft { float: left; margin: 0 18px 18px 0; }
+	
+	/* Add HTML5 Caption Class for Images */
+	figure.figure {	background: #EEE; margin: 0 0 18px;	-webkit-border-radius: 3px;	-moz-border-radius: 3px; display: inline-block; }
+	figure.figure figcaption { display: block; padding: 8px 10px; font-size: 13px; line-height: 18px; color: #555; }
+	figure.alignright.figure { float: right; margin: 0 0 18px 18px; }
+	figure.alignleft.figure { float: left; margin: 0 18px 18px 0; }
+		
+	/* Sidebar Adjustment */
+	.sidebar-section { padding-bottom: 10px; padding-top: 20px;	font-size: 1.3rem; font-weight: normal;	}
+	
+	/* Footer Nav */
+	.footer-section { padding-bottom: 10px; padding-top: 20px; font-size: 1.3rem; font-weight: normal; }
+	.footer-nav li { display: block; float: right; padding-left: 3%; margin-bottom: 0; }
+
+/*  -------------------------------------------------------
+    Customize Foundation Style Pagination for WP-Pagenavi
+    ---------------------------------------------------- */ 
+    
+    div.wp-pagenavi { display: block; height: 24px; margin-left: -5px; color: #555; }
+    div.wp-pagenavi a, div.wp-pagenavi span { float: left; display: block; padding: 6px 7px 4px; height: 24px; color: #555; font-size: 15px; margin-left: 5px; }
+    div.wp-pagenavi span.pages { padding-left: 0; }
+    div.wp-pagenavi .current, div.wp-pagenavi a:hover { border-bottom: solid 2px #00a6fc; color: #141414; }
+    div.wp-pagenavi span.unavailable:hover { border-bottom: none; }
+	
+/*  --------------------------
+    Your Customized Style
+    ----------------------- */
+    
+    h1.entry-title {
+	font-size: 4rem;
+}
+
+div.entry-content p {
+	font-size: 1.6rem;
+	line-height: 1.6em;
+}
+
+div.entry-content a {
+	font-weight: 600;
+}
+
+header.comment-author img {width: 10%;}
+
+.header {
+		background-image: url('images/bg-repeat.jpg');
+	margin-bottom: 3em;
+}
+.footer {background-image: url('images/background-dark-texture.jpg');
+		background-repeat: repeat;
+		background-size: 7%;
+		margin-top:2em;
+}
+
+.footer, .footer h3, .footer h4 {color:#ede6dd;}
+.footer a,.footer a:visited {color:#ede6dd; border-bottom: 1px dashed;}
+.footer a:hover {border-bottom: 1px solid;}
+.footer .four {min-height:13em;
+				border-right: 1px dashed #720000;
+				padding-left: 5%;
+}
+.footer .four:nth-child(3) {border-right: none;}
+.footer li {list-style-type: none;}
+
+@media only screen and (max-width: 767px) {
+	
+	.footer .four {border:none;
+		border-bottom: 1px solid #720000;}
+	}
+}
+
+.row header {
+	color: #ede6dd;
+	background-repeat: repeat-x;
+/*	height: 185px; */
+}
+
+.container {
+	padding: 0px;
+}
+
+
+#logo {
+	background-image: url('images/rwd-logo-desktop.png');
+	background-repeat: no-repeat;
+	background-size: 160px;
+	background-position: center;
+	width: 100%;
+	float: left;
+	height: 109px;
+	margin: 0 auto;
+	text-indent: -99999px;
+}
+
+.reverie-header {
+	float: left;
+	width: 100%;
+	padding-top: 16px;
+}
+
+header h1 {
+	margin: 0px;
+	font-weight: 600;
+	font-family: helvetica;
+	font-size: 1.6em;
+	text-align: center;
+	text-transform: uppercase;
+	color: #ede6dd;
+}
+
+nav {
+	width:  100%;
+	float: left;
+	color: #8E352E;
+	margin-top: 0.8em;
+}
+
+nav ul li {
+	float: left;
+	width: 33%;
+	text-align: center;
+	font-size: 1em;
+	text-transform: uppercase;
+	list-style-type: none;
+	line-height: 3em;
+	border-right:solid 4px;
+	transition: all ease 1s;
+}
+
+nav ul li:last-of-type {
+	border-right:0;
+}
+
+nav ul li:hover {
+	background-color: rgba(255,255,255,0.3);
+}
+
+nav ul li a {
+	color: #EDE6DD;
+	float:left;
+	width: 100%;
+}
+
+nav ul li a:hover {
+	color: #EDE6DD;
+}
+
+ul#nav {
+	list-style-type: none;
+	text-transform: uppercase;
+	font-size: 20px;
+}
+
+ul#nav li {
+	margin-bottom: 10px;
+}
+
+ul#nav li:before {
+	content: "» ";
+	color: #cb4a43;
+	font-size: 20px;
+}
+
+hr {
+	margin-bottom: 20px;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-bottom: 0px;
+	margin-top: 20px;
+}
+
+header .byline, header time { color: #555;}
+ 
+.post-box article header { margin-bottom: 2em; /*height: 90px;*/}
+
+/* Removed after adding in the Google FOnts
+.entry-content h2{
+margin-top: 0px;
+margin-bottom: 20px;
+font-family: Helvetica, 'helvetica neue';
+font-size: 22px;
+text-transform: uppercase;}
+
+article h1 {font-size: 3.5rem;
+border-top: 5px solid;
+margin-bottom: 1em;
+}
+
+article p {
+	font-size: 0.8em;
+}
+*/
+
+article p strong:first-of-type {
+	text-transform: uppercase;
+	font-size: 1.2em;
+}
+
+.entry-content ul {
+	list-style-type: disc;
+	margin-left: 2em;
+}
+
+.category-interview h3 {
+	text-transform: none;
+	font-size: 1.2em;
+	font-size: 1.8rem
+}
+
+article.category-interview p {
+	font-weight: normal;
+}
+
+.category-interview {}
+
+
+/* New Styles added from Typecast */
+
+body {
+    font-family: Roboto;
+}
+
+p {
+    margin-bottom: 1.5625em;
+    font-weight: 400;
+    font-family: Roboto;
+    line-height: 1.6171875em;
+    font-size: 1em;
+}
+
+h1 {
+    font-weight: 500;
+    font-family: Roboto;
+    font-size: 2.8em;
+    line-height: 1.4em;
+    margin-bottom: 1em;
+}
+
+h2 {
+    font-weight: 400;
+    font-family: Roboto;
+    font-size: 2.4em;
+    line-height: 1.2em;
+    margin-bottom: 0.5em;
+    margin-top: 0.5em;
+}
+
+h3 {
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+    font-weight: 400;
+    font-family: Roboto;
+}
+
+h4 {
+    font-size: 1.4em;
+    margin-bottom: 1em;
+    font-weight: 400;
+    font-family: Roboto;
+}
+
+
+
+@media (min-width: 41em){
+	#logo {background-position: left;}
+	.reverie-header {
+position: absolute;
+width: 75%;
+padding-top: 16px;
+right: 0;
+top: 2em;
+}
+
+@media  (min-width: 1024px){
+    body:after {
+        content: 'desktopish';
+        display: none;
+    }
+   }
+@media (min-width: 768px) and (max-width:1024px) {
+    body:after {
+        content: 'Tabletish';
+        display: none;
+    }
+    
+    aside article {
+	    width: 45%;
+	    margin-left:2%;
+	    float:left;
+    }
+    aside article:nth-child(even) {
+	    float:right;
+	    background: pink;
+    }
+}
+
+@media (max-width: 767px) {
+    body:after {
+        content: 'mobilish';
+        display: none;
+    }
+}
